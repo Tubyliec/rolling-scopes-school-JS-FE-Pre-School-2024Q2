@@ -1,0 +1,144 @@
+@use 'shared/styles/variables';
+@use 'shared/styles/mixins';
+@use 'shared/styles/reset';
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  @include mixins.flex-column;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: variables.$color-primary;
+}
+
+.blur {
+  width: 100%;
+  height: 100%;
+
+  @include mixins.flex-center;
+
+  backdrop-filter: blur(variables.$blur-amount);
+}
+
+.player {
+  @include mixins.flex-column;
+  @include mixins.flex-center;
+
+  width: variables.$player-width;
+  height: variables.$player-height;
+  background-color: variables.$color-background;
+
+  @include mixins.player-border;
+
+  gap: variables.$spacing-medium;
+}
+
+.avatar {
+  background-size: cover;
+  background-position-x: center;
+  height: 50%;
+  width: 80%;
+
+  @include mixins.player-border;
+}
+
+.player__data {
+  @include mixins.flex-column;
+  @include mixins.flex-center;
+
+  text-align: center;
+  width: 80%;
+  gap: variables.$spacing-medium;
+}
+
+.info {
+  @include mixins.flex-column;
+
+  gap: variables.$spacing-small;
+}
+
+.singer {
+  font-size: larger;
+}
+
+.player__control-button {
+  @include mixins.button-base;
+
+  width: variables.$player-button-size;
+  height: variables.$player-button-size;
+}
+
+.player__control {
+  @include mixins.flex-center;
+
+  align-items: center;
+  gap: variables.$spacing-small;
+}
+
+.previous {
+  background-image: url('../public/icons/backward.png');
+  background-size: cover;
+}
+
+.playing {
+  background-image: url('../public/icons/play.png');
+  background-size: cover;
+  width: variables.$player-play-button-size;
+  height: variables.$player-play-button-size;
+}
+
+.played {
+  background-image: url('../public/icons/pause.png');
+  background-size: cover;
+}
+
+.next {
+  background-image: url('../public/icons/forward.png');
+  background-size: cover;
+}
+
+.player__time-bar {
+  @include mixins.flex-column;
+
+  gap: variables.$spacing-small;
+  width: 80%;
+}
+
+.time {
+  @include mixins.flex-center;
+
+  gap: variables.$spacing-small;
+}
+
+.player__seek-bar {
+  cursor: pointer;
+}
+
+footer {
+  @include mixins.flex-center;
+
+  color: variables.$color-text;
+  background-color: variables.$color-background;
+  justify-content: space-between;
+  align-items: center;
+  padding: variables.$spacing-small;
+}
+
+footer img {
+  width: 100px;
+  height: 30px;
+}
+
+footer p {
+  font-size: larger;
+  padding: 5px;
+  cursor: default;
+}
+
+@media (width <= 300px) {
+  footer {
+    @include mixins.flex-column;
+  }
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Audio player</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="blur">
+        <div class="player">
+          <div class="avatar"></div>
+          <div class="player__data">
+            <div class="info">
+              <p class="singer"></p>
+              <p class="song"></p>
+            </div>
+            <div class="player__control">
+              <div class="player__control-button previous"></div>
+              <div class="player__control-button playing"></div>
+              <div class="player__control-button next"></div>
+            </div>
+            <div class="player__time-bar">
+              <div class="time">
+                <p class="current">0:00</p>
+                <p>/</p>
+                <p class="duration">0:00</p>
+              </div>
+              <input
+                class="player__seek-bar"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a href="https://github.com/Tubyliec"
+          ><img
+            src="../public/icons/github.svg"
+            alt="GitHub"
+        /></a>
+        <p>2024</p>
+        <a href="https://rs.school/courses/javascript"
+          ><img
+            src="../public/icons/rsschool.svg"
+            alt="Rsschool Icon"
+        /></a>
+      </footer>
+    </div>
+    <script
+      src="index.js"
+      type="module"
+    ></script>
+  </body>
+</html>
