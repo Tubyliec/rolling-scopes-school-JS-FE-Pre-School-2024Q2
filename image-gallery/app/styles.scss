@@ -1,10 +1,10 @@
-@import 'shared/styles/variables';
-@import 'shared/styles/reset';
-@import 'shared/styles/mixins';
-@import 'shared/ui/button/button';
-@import 'shared/ui/image-gallery/image-gallery';
-@import 'features/image-search/image-search';
-@import 'pages/home/home';
+@use 'shared/styles/variables';
+@use 'shared/styles/reset';
+@use 'shared/styles/mixins' as *;
+@use 'shared/ui/button/button';
+@use 'shared/ui/image-gallery/image-gallery';
+@use 'features/image-search/image-search';
+@use 'pages/home/home';
 
 // Global styles
 .wrapper {
