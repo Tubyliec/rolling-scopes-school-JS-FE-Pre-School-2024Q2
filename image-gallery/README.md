@@ -44,12 +44,6 @@ To auto-fix linting issues:
 npm run linters:fix
 ```
 
-## Usage
-
-1. Open `index.html` in your browser
-2. Use the search bar to find images
-3. Click the clear button to reset the search
-
 ## Scripts
 
 - `npm run lint` - Run ESLint
