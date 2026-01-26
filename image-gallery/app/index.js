@@ -2,7 +2,7 @@ import { HomePage } from './pages/home/home.js';
 import { AssetsUtils } from './shared/utilities/assets-utils.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  AssetsUtils.preloadIcons().catch(error => {
+  AssetsUtils.preloadIcons().catch((error) => {
     console.warn('Failed to preload some icons:', error);
   });
 

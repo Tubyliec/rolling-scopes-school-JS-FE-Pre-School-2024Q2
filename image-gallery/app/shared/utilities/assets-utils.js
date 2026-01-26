@@ -16,14 +16,15 @@ export class AssetsUtils {
 
   static preloadAssets(assetPaths) {
     return Promise.all(
-      assetPaths.map(path => {
+      assetPaths.map((path) => {
         return new Promise((resolve, reject) => {
           const img = new Image();
           img.onload = () => resolve(path);
-          img.onerror = () => reject(new Error(`Failed to load asset: ${path}`));
+          img.onerror = () =>
+            reject(new Error(`Failed to load asset: ${path}`));
           img.src = path;
         });
-      })
+      }),
     );
   }
 

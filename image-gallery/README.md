@@ -35,14 +35,17 @@ A responsive image gallery application built with vanilla JavaScript that search
 ### Running the Application
 
 1. Compile SCSS to CSS:
+
    ```bash
    npm run scss
    ```
 
 2. Start a local server:
+
    ```bash
    python3 -m http.server 8000
    ```
+
    or use any other static server
 
 3. Open `http://localhost:8000` in your browser
