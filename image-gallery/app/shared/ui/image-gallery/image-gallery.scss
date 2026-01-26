@@ -1,0 +1,21 @@
+.image-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) 0;
+  background-color: var(--color-primary);
+
+  &__image {
+    width: var(--image-width);
+    height: var(--image-height);
+    object-fit: cover;
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--color-white);
+
+    @media (max-width: var(--breakpoint-mobile)) {
+      width: 80%;
+      height: 200px;
+    }
+  }
+}

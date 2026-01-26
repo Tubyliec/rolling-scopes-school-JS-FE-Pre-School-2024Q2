@@ -1,0 +1,38 @@
+@mixin mobile-only {
+  @media (max-width: var(--breakpoint-mobile)) {
+    @content;
+  }
+}
+
+@mixin small-only {
+  @media (max-width: var(--breakpoint-small)) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin button-base {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
