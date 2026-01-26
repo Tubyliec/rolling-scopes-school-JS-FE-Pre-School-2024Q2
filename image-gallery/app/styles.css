@@ -62,13 +62,7 @@ code,
 pre,
 kbd,
 samp {
-  font-family:
-    sfmono-regular,
-    consolas,
-    liberation mono,
-    menlo,
-    courier,
-    monospace;
+  font-family: monospace;
 }
 
 * {
