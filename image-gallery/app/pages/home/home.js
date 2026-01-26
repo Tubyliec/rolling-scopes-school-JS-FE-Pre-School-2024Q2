@@ -1,5 +1,5 @@
-import { ImageSearch } from '../features/image-search/image-search.js';
-import { APP_CONFIG } from '../core/config.js';
+import { ImageSearch } from '../../features/image-search/image-search.js';
+import { APP_CONFIG } from '../../core/config.js';
 
 export class HomePage {
   constructor() {

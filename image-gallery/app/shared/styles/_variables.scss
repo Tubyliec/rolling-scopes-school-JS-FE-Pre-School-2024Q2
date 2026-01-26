@@ -1,45 +1,37 @@
 :root {
-  // Colors
   --color-primary: #000;
   --color-white: #fff;
   --color-error: #f44;
   --color-error-bg: #ffebee;
 
-  // Spacing
   --spacing-xs: 5px;
   --spacing-sm: 10px;
   --spacing-md: 30px;
   --spacing-lg: 40px;
   --spacing-xl: 45px;
 
-  // Breakpoints
   --breakpoint-mobile: 550px;
   --breakpoint-small: 300px;
 
-  // Sizing
   --image-width: 450px;
   --image-height: 350px;
   --button-size: 25px;
   --clear-button-size: 10px;
   --logo-height: 50px;
 
-  // Typography
   --font-size-small: 14px;
   --font-size-medium: 16px;
   --font-size-large: 18px;
   --font-size-xlarge: x-large;
 
-  // Border radius
   --border-radius-small: 5px;
   --border-radius-medium: 8px;
   --border-radius-large: 15px;
   --border-radius-circle: 50%;
 
-  // Transitions
   --transition-fast: 0.15s ease;
   --transition-normal: 0.3s ease;
 
-  // Layout
   --search-form-width: 350px;
   --footer-logo-width: 100px;
   --footer-logo-height: 30px;

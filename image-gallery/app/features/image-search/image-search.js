@@ -1,9 +1,10 @@
-import { fetchWithErrorHandling } from '../shared/utilities/api-utils.js';
-import { API_CONFIG } from '../core/config.js';
+import { fetchWithErrorHandling } from '../../shared/utilities/api-utils.js';
+import { API_CONFIG } from '../../core/config.js';
 
 export class ImageSearch {
   constructor(containerElement, searchTerm = 'Belarus') {
     this.container = containerElement;
+    this.container.classList.add('image-gallery');
     this.searchTerm = searchTerm;
     this.isLoading = false;
     this.init();

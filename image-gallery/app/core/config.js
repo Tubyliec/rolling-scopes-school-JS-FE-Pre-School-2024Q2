@@ -8,3 +8,14 @@ export const APP_CONFIG = {
   DEFAULT_SEARCH_TERM: 'Belarus',
   DEBOUNCE_DELAY: 300,
 };
+
+export const ASSETS_CONFIG = {
+  BASE_PATH: 'public',
+  ICONS: {
+    UNSPLASH: 'public/icons/unsplash.png',
+    SEARCH: 'public/icons/search-icon.png',
+    CLEAR: 'public/icons/clear.png',
+    GITHUB: 'public/icons/github.svg',
+    RSSCHOOL: 'public/icons/rsschool.svg',
+  },
+};
