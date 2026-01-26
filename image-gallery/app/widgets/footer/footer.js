@@ -1,5 +1,3 @@
-import { AssetsUtils } from '../../shared/utilities/assets-utils.js';
-
 export class Footer {
   constructor() {
     this.element = document.querySelector('footer');
@@ -12,7 +10,7 @@ export class Footer {
 
   setupEventListeners() {
     const links = this.element?.querySelectorAll('a');
-    links?.forEach(link => {
+    links?.forEach((link) => {
       link.addEventListener('click', (e) => {
         this.handleLinkClick(e);
       });
@@ -22,8 +20,8 @@ export class Footer {
   handleLinkClick(event) {
     const href = event.target.closest('a')?.href;
     if (href) {
-      const linkClickEvent = new CustomEvent('footerLinkClick', { 
-        detail: { url: href } 
+      const linkClickEvent = new CustomEvent('footerLinkClick', {
+        detail: { url: href },
       });
       document.dispatchEvent(linkClickEvent);
     }

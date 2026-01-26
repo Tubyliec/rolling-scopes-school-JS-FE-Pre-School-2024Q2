@@ -16,7 +16,7 @@ export class HomePage {
   setupComponents() {
     this.header = new Header();
     this.footer = new Footer();
-    
+
     this.setupImageGallery();
   }
 

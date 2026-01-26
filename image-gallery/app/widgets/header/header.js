@@ -1,5 +1,3 @@
-import { AssetsUtils } from '../../shared/utilities/assets-utils.js';
-
 export class Header {
   constructor() {
     this.element = document.querySelector('header');
