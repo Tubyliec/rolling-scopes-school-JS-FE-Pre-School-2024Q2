@@ -1,9 +1,11 @@
-import { fetchWithErrorHandling } from '../shared/utilities/api-utils.js';
-import { API_CONFIG } from '../core/config.js';
+import { fetchWithErrorHandling } from '../../shared/utilities/api-utils.js';
+import { API_CONFIG } from '../../core/config.js';
+import { Image } from '../../entities/image/image.entity.js';
 
 export class ImageSearch {
   constructor(containerElement, searchTerm = 'Belarus') {
     this.container = containerElement;
+    this.container.classList.add('image-gallery');
     this.searchTerm = searchTerm;
     this.isLoading = false;
     this.init();
@@ -33,12 +35,17 @@ export class ImageSearch {
 
   renderImages(images) {
     images.forEach((imageData) => {
-      const img = document.createElement('img');
-      img.classList.add('image-gallery__image');
-      img.loading = 'lazy';
-      img.src = imageData.urls.regular;
-      img.alt = imageData.alt_description || 'Image';
-      this.container.appendChild(img);
+      try {
+        const image = Image.fromApiResponse(imageData);
+        const img = document.createElement('img');
+        img.classList.add('image-gallery__image');
+        img.loading = 'lazy';
+        img.src = image.url;
+        img.alt = image.description || 'Image';
+        this.container.appendChild(img);
+      } catch (error) {
+        console.warn('Invalid image data skipped:', error);
+      }
     });
   }
 

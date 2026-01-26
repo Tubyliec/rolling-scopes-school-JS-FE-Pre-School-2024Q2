@@ -1,5 +1,7 @@
-import { ImageSearch } from '../features/image-search/image-search.js';
-import { APP_CONFIG } from '../core/config.js';
+import { ImageSearch } from '../../features/image-search/image-search.js';
+import { APP_CONFIG } from '../../core/config.js';
+import { Header } from '../../widgets/header/header.js';
+import { Footer } from '../../widgets/footer/footer.js';
 
 export class HomePage {
   constructor() {
@@ -7,8 +9,15 @@ export class HomePage {
   }
 
   init() {
+    this.setupComponents();
+    this.setupEventListeners();
+  }
+
+  setupComponents() {
+    this.header = new Header();
+    this.footer = new Footer();
+
     this.setupImageGallery();
-    this.setupSearchForm();
   }
 
   setupImageGallery() {
@@ -21,26 +30,11 @@ export class HomePage {
     }
   }
 
-  setupSearchForm() {
-    const searchForm = document.querySelector('.search-form');
-    const clearButton = document.querySelector('.clear-button');
-    const searchInput = document.querySelector('.search');
-
-    if (searchForm) {
-      searchForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const searchTerm = searchInput.value.trim();
-        if (searchTerm) {
-          this.imageSearch.searchImages(searchTerm);
-        }
-      });
-    }
-
-    if (clearButton) {
-      clearButton.addEventListener('click', () => {
-        searchInput.value = '';
-        searchInput.focus();
-      });
-    }
+  setupEventListeners() {
+    document.addEventListener('search', (e) => {
+      if (this.imageSearch) {
+        this.imageSearch.searchImages(e.detail);
+      }
+    });
   }
 }
