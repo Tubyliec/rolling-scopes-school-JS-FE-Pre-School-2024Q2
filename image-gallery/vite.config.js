@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: 'app',
-  base: '/rolling-scopes-school-JS-FE-Pre-School-2024Q2/image-gallery/',
+  base: '/image-gallery/',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
@@ -11,7 +11,13 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'app/index.html'),
       },
+      output: {
+        entryFileNames: '[name]-[hash].js',
+        chunkFileNames: '[name]-[hash].js',
+        assetFileNames: '[name]-[hash][extname]',
+      },
     },
+    sourcemap: true,
   },
   server: {
     port: 3000,

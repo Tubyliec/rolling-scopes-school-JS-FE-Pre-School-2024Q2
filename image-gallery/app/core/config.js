@@ -10,12 +10,12 @@ export const APP_CONFIG = {
 };
 
 export const ASSETS_CONFIG = {
-  BASE_PATH: '/public',
+  BASE_PATH: '/image-gallery',
   ICONS: {
-    UNSPLASH: '/icons/unsplash.png',
-    SEARCH: '/icons/search-icon.png',
-    CLEAR: '/icons/clear.png',
-    GITHUB: '/icons/github.svg',
-    RSSCHOOL: '/icons/rsschool.svg',
+    UNSPLASH: '/image-gallery/icons/unsplash.png',
+    SEARCH: '/image-gallery/icons/search-icon.png',
+    CLEAR: '/image-gallery/icons/clear.png',
+    GITHUB: '/image-gallery/icons/github.svg',
+    RSSCHOOL: '/image-gallery/icons/rsschool.svg',
   },
 };
