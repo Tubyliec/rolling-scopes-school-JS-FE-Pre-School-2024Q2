@@ -2,6 +2,8 @@
 
 A modern, responsive audio player built with vanilla JavaScript, HTML5, and SCSS. This project was created as part of The Rolling Scopes School JavaScript Frontend Pre-School 2024Q2.
 
+![Audio Player Screenshot](./public/images/Screenshot_20260129_013432.png)
+
 ## Features
 
 - **Playback Controls**: Play, pause, previous, and next track functionality
