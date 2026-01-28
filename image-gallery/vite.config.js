@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: 'app',
-  base: '/image-gallery/',
+  base: './',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
