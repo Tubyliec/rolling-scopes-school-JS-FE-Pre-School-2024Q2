@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: 'app',
-  base: './',
+  base: '/rolling-scopes-school-JS-FE-Pre-School-2024Q2/audio-player/',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
