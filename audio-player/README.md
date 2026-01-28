@@ -20,7 +20,6 @@ A modern, responsive audio player built with vanilla JavaScript, HTML5, and SCSS
 - **Prettier**: Code formatting
 - **Stylelint**: CSS/SCSS linting
 
-
 ### Building
 
 The project uses SCSS for styling. To compile styles:

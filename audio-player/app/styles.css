@@ -26,7 +26,6 @@
 .player {
   display: flex;
   flex-direction: column;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 300px;
@@ -49,7 +48,6 @@
 .player__data {
   display: flex;
   flex-direction: column;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -88,29 +86,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: center;
   gap: 10px;
 }
 
 .previous {
-  background-image: url('../public/icons/backward.png');
+  background-image: url("/icons/backward.png");
   background-size: cover;
 }
 
 .playing {
-  background-image: url('../public/icons/play.png');
+  background-image: url("/icons/play.png");
   background-size: cover;
   width: 60px;
   height: 60px;
 }
 
 .played {
-  background-image: url('../public/icons/pause.png');
+  background-image: url("/icons/pause.png");
   background-size: cover;
 }
 
 .next {
-  background-image: url('../public/icons/forward.png');
+  background-image: url("/icons/forward.png");
   background-size: cover;
 }
 
@@ -134,12 +131,10 @@
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: white;
   background-color: black;
-  justify-content: space-between;
-  align-items: center;
   padding: 10px;
 }
 

@@ -23,8 +23,10 @@
 }
 
 .player {
-  @include mixins.flex-column;
-  @include mixins.flex-center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   width: variables.$player-width;
   height: variables.$player-height;
@@ -45,8 +47,10 @@
 }
 
 .player__data {
-  @include mixins.flex-column;
-  @include mixins.flex-center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   text-align: center;
   width: 80%;
@@ -73,29 +77,28 @@
 .player__control {
   @include mixins.flex-center;
 
-  align-items: center;
   gap: variables.$spacing-small;
 }
 
 .previous {
-  background-image: url('../public/icons/backward.png');
+  background-image: url('/icons/backward.png');
   background-size: cover;
 }
 
 .playing {
-  background-image: url('../public/icons/play.png');
+  background-image: url('/icons/play.png');
   background-size: cover;
   width: variables.$player-play-button-size;
   height: variables.$player-play-button-size;
 }
 
 .played {
-  background-image: url('../public/icons/pause.png');
+  background-image: url('/icons/pause.png');
   background-size: cover;
 }
 
 .next {
-  background-image: url('../public/icons/forward.png');
+  background-image: url('/icons/forward.png');
   background-size: cover;
 }
 
@@ -117,12 +120,12 @@
 }
 
 footer {
-  @include mixins.flex-center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   color: variables.$color-text;
   background-color: variables.$color-background;
-  justify-content: space-between;
-  align-items: center;
   padding: variables.$spacing-small;
 }
 

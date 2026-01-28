@@ -53,8 +53,8 @@ export class AudioPlayer {
 
     this.elements.singer.textContent = currentTrack.singer;
     this.elements.song.textContent = currentTrack.song;
-    this.elements.avatar.style.backgroundImage = `url("${currentTrack.avatar}")`;
-    this.elements.background.style.backgroundImage = `url("${currentTrack.avatar}")`;
+    this.elements.avatar.style.backgroundImage = `url("${currentTrack.cover}")`;
+    this.elements.background.style.backgroundImage = `url("${currentTrack.cover}")`;
   }
 
   onMetadataLoaded() {

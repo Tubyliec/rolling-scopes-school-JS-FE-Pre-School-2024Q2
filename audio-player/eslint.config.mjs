@@ -7,6 +7,7 @@ export default [
   eslint.configs.recommended,
   {
     files: ['**/*.js'],
+    ignores: ['dist/**', 'node_modules/**'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
