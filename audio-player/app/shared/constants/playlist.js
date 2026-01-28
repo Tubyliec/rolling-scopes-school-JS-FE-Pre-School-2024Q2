@@ -5,7 +5,7 @@ export const PLAYLIST = [
     artist: 'Green Day',
     duration: '2:54',
     src: '/audio/American Idiot.mp3',
-    cover: '/images/green day.jpg'
+    cover: '/images/green day.jpg',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const PLAYLIST = [
     artist: 'Kansas',
     duration: '5:26',
     src: '/audio/Carry On Wayward Son.mp3',
-    cover: '/images/kansas.jpg'
+    cover: '/images/kansas.jpg',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const PLAYLIST = [
     artist: 'The Offspring',
     duration: '4:29',
     src: '/audio/Gone Away.mp3',
-    cover: '/images/offspring.jpg'
+    cover: '/images/offspring.jpg',
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const PLAYLIST = [
     artist: 'AC/DC',
     duration: '3:28',
     src: '/audio/Highway To Hell.mp3',
-    cover: '/images/acdc.jpg'
+    cover: '/images/acdc.jpg',
   },
   {
     id: 5,
@@ -37,6 +37,6 @@ export const PLAYLIST = [
     artist: 'Metallica',
     duration: '7:21',
     src: '/audio/St. Anger.mp3',
-    cover: '/images/metallica.jpg'
-  }
+    cover: '/images/metallica.jpg',
+  },
 ];
