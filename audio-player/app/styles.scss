@@ -73,7 +73,6 @@
 .player__control {
   @include mixins.flex-center;
 
-  align-items: center;
   gap: variables.$spacing-small;
 }
 
@@ -117,12 +116,12 @@
 }
 
 footer {
-  @include mixins.flex-center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   color: variables.$color-text;
   background-color: variables.$color-background;
-  justify-content: space-between;
-  align-items: center;
   padding: variables.$spacing-small;
 }
 
